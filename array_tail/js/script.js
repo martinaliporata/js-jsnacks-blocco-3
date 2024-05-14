@@ -12,8 +12,8 @@
 // Genera numeri con math.random da 1 a 100 con ciclo for (dopo < andrà il valore del prompt dell'utente)
 // Uso slice per stamapre gli utlimi cinque numeri dell'array
 
-const userChoice = Number.parseInt(prompt('Write how many elements the array should contain'))
-console.log(userChoice)
+const userChoice = Number.parseInt(prompt('Write how many elements the array should contain'));
+console.log(userChoice);
 
 const array = [userChoice];
 

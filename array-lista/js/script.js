@@ -17,3 +17,9 @@
 // Aggiungiamo con .push 'pesca'
 // Usiamo find o findIndex per verificare se nell'array è presente il cocomero
 // Aggiungiamo un if per stampare una o l'altra situazione
+
+const array = ['banana', 'mela', 'pera', 'ciliegia', 'arancia', 'mandarino', 'cocomero', 'limone', 'fragola'];
+array.push('pesca')
+
+const found = array.find((element) === 'cocomero');
+console.log(found);
