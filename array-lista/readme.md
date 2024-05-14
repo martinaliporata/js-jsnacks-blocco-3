@@ -12,3 +12,8 @@ Fasi
 Suggerimenti/Indicazioni:
 Sì, lo sappiamo che esistono le funzioni includes() e indexOf() ma noi non le vogliamo utilizzare per cercare nel frigorifero.
 
+
+Creiamo un array inserendo 'banana', 'mela', 'pera', 'ciliegia', 'arancia', 'mandarino', 'cocomero', 'limone', 'fragola'.
+Aggiungiamo con .push 'pesca'
+Usiamo find o findIndex per verificare se nell'array è presente il cocomero
+Aggiungiamo un if per stampare una o l'altra situazione
