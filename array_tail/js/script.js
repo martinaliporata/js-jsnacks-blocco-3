@@ -15,6 +15,7 @@
 const userChoice = Number.parseInt(prompt('Write how many elements the array should contain'));
 console.log(userChoice);
 
+// array containing prompt value
 const array = [userChoice];
 
 for (let i = 0; i <=userChoice; i++) {

@@ -21,5 +21,12 @@
 const array = ['banana', 'mela', 'pera', 'ciliegia', 'arancia', 'mandarino', 'cocomero', 'limone', 'fragola'];
 array.push('pesca')
 
+// non ho capito come funziona find
 const found = array.find((element) === 'cocomero');
 console.log(found);
+
+if (found=='cocomero') {
+    console.log('Trovato! Devo solo preparare il cocktail.')
+} else {
+    console.log('Oh no, devo uscire a comprare il cocomero!')
+}
