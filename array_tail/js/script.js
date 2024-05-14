@@ -15,3 +15,10 @@
 const userChoice = Number.parseInt(prompt('Write how many elements the array should contain'))
 console.log(userChoice)
 
+const array = [userChoice];
+
+for (let i = 0; i <=userChoice; i++) {
+    Math.floor (Math.random() * 100) + 1;
+    // non so come dire di stampare gli ultimi cinque numeri
+    console.log()
+}
