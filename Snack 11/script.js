@@ -3,6 +3,12 @@
 
 const array = []
 
-const userNumber = Number.parseInt(prompt('Inserisci un numero'), 10)
+const userNumber = Number.parseInt(prompt('Inserisci un numero'), 10);
 
-while (array)
+let somma = 0;
+
+while (somma < 50) {
+    const userNumber = Number.parseInt(prompt('Inserisci un numero'), 10)
+    
+    array.push(userNumber);
+}
