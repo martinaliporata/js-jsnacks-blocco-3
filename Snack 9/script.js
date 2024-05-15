@@ -3,13 +3,12 @@
 
 const array []
 
-let i = 0;
 
-while (i <= 6) {
-    let numberUser = Number.parseInt(prompt('Type a number'), 10)
-    i= i+1
+while (array.length < 5) {
+    let userNumber = Number.parseInt(prompt('Type a number'), 10);
+    if (Number.isNaN(userNumber) !== true && userNumber% 2 === 1) {
+        array.push(userNumber);
+    }
 }
 
-if (userNumber % 2 === 1) {
-        numbersArray.push(userNumber)
-    }
+console.log(array)
