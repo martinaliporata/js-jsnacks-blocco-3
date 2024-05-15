@@ -30,3 +30,27 @@ if (found=='cocomero') {
 } else {
     console.log('Oh no, devo uscire a comprare il cocomero!')
 }
+
+
+// correzione
+
+const fruitArray = ['banana', 'mela', 'pera', 'ciliegia', 'arancia', 'mandarino', 'cocomero', 'limone', 'fragola'];
+fruitArray.push('pesca');
+
+//verificare se nell'array di frutta c'è il cocomero:
+//- se c'è stampiamo: "Trovato! Devo solo preparare il cocktail."
+//- se non lo trovo: "Oh no, devo uscire a comprare il cocomero!"
+let trovata = false;
+
+for (let index= 0; index < fruitArray.length; index++) {
+
+    if (fruitArray[index] === 'cocomero'){
+        trovata=true;
+    }
+
+    if (trovata) {
+        console.log('Trovato! Devo solo preparare il cocktail')
+    } else {
+        console.log('Oh no, devo uscire a comprare il cocomero')
+    }
+}

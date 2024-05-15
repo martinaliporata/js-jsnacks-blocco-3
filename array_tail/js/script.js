@@ -12,7 +12,7 @@
 // Genera numeri con math.random da 1 a 100 con ciclo for (dopo < andrà il valore del prompt dell'utente)
 // Uso slice per stamapre gli utlimi cinque numeri dell'array
 
-const userChoice = Number.parseInt(prompt('Write how many elements the array should contain'));
+const userChoice = Number.parseInt(prompt('Write how many elements the array should contain'), 10);
 console.log(userChoice);
 
 // array containing prompt value
@@ -20,6 +20,21 @@ const array = [userChoice];
 
 for (let i = 0; i <=userChoice; i++) {
     Math.floor (Math.random() * 100) + 1;
-    // non so come dire di stampare gli ultimi cinque numeri
     console.log()
 }
+
+
+// correzione
+let arrayElements = Number.parseInt(prompt('Write how many elements the array should contain'), 10);
+
+if(Number.isNaN(arrayElements) || arrayElements > 40 || arrayElements < 5){
+    arrayElements = 15
+}
+
+for (let index = 0; index < arrayElements; index++){
+    const randonNumber = Math.floor (Math.random() * 100) + 1;
+    numbersArray.push(randonNumber)
+}
+
+console.log(numbersArray.slice(-5));
+console.log(numbersArray)
