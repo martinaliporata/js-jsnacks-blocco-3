@@ -3,10 +3,13 @@
 
 const array []
 
-let i = 0
+let i = 0;
 
 while (i <= 6) {
-    if (userNumber % 2 === 1) {
+    let numberUser = Number.parseInt(prompt('Type a number'), 10)
+    i= i+1
+}
+
+if (userNumber % 2 === 1) {
         numbersArray.push(userNumber)
     }
-}
