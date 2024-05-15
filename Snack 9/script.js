@@ -3,7 +3,9 @@
 
 const array []
 
-while (array <= 6) {
+let i = 0
+
+while (i <= 6) {
     if (userNumber % 2 === 1) {
         numbersArray.push(userNumber)
     }
