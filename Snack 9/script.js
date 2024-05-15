@@ -3,7 +3,7 @@
 
 const array = [];
 
-while (array.length < 5) {
+while (array.length < 6) {
     let userNumber = Number.parseInt(prompt('Type a number'), 10);
     if (Number.isNaN(userNumber) !== true && userNumber% 2 === 1) {
         array.push(userNumber);
