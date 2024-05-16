@@ -18,3 +18,27 @@ function dueParole (parola1, parola2) {
 }
 
 dueParole('Ciao', 'buongiorno')
+
+// correzione
+
+const userWordA = prompt('dimmi una parola');
+const userWordB = prompt('dimmi una seconda parola');
+
+if (sonoLungheUguali(userWordA, userWordB) === true){
+    console.log(userWordA, userWordB);
+} else {
+    if (userWordA.lenght > userWordB.length) {
+        console.log(userWordA)
+    } else {
+        console.log(userWordB)
+    }
+}
+
+// io ho "sbagliato" perché la consegna chiedeva un vero o falso
+function sonoLungheUguali(parolaA, parolaB) {
+    if(parolaA.lenght === parolaB.lenght) {
+        return true;
+    } else {
+        return false;
+    }
+}
