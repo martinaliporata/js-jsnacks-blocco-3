@@ -2,6 +2,10 @@
 
 let userNumber = Number.parseInt(prompt('Scrivi quanti secondi attendere'))
 
+if (userNumber > 10 || Number.isNaN(userNumber)){
+    userNumber= 3;
+}
+
 const timer = setInterval (function(){
     if (userNumber < 0)
         clearInterval(timer)
