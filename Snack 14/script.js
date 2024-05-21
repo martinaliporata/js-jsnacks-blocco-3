@@ -3,11 +3,12 @@
 let userNumber = Number.parseInt(prompt('Scrivi quanti secondi attendere'))
 
 if (userNumber > 10 || Number.isNaN(userNumber)){
-    userNumber= 3;
+    userNumber = 3;
 }
 
 const timer = setInterval (function(){
+    userNumber--;
     if (userNumber < 0)
-        clearInterval(timer)
-        alert('Stop!')
-}, userNumber)
+        clearInterval(timer);
+        alert('Stop!');
+}, 2000)
