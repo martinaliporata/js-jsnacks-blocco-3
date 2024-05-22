@@ -8,3 +8,5 @@ const palla = {
     "peso" : ['10'],
 }
 
+const userChoice = prompt('Change balls weight')
+
