@@ -50,18 +50,16 @@ const people = [
         età: 6,
     },
     {
-        nome: 'tiziano', 
+        nome: 'tiziano',
         cognome: 'amati',
         età: 20,
     },
 ]
 
-const arrayVuoto = []
-
-people.forEach((element) => {
-    if (età >= 18) {
-        console.log(`$(element.nome)$(element.cognome)$', tu puoi guidare'`)
-    } else {
-        console.log(`$(element.nome)$(element.cognome)$', tu non puoi guidare'`)
-    }
+// (condizione)? 'valoredivero' : 'valore di falso'
+const personeModificate = persone.map((persona) =>{
+    return `${persona.nome}${persona.cognome}${persona.età >= 18}? "può guidare perche maggiorenne" : "non puo guidare perche minorenne"}`;
 })
+
+console.log(people)
+console.log(personeModificate)
