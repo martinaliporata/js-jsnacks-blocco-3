@@ -97,8 +97,15 @@ const automobili =
     },
 ]
 
-const benzina = automobili.filter(marca) => {
+const benzina = automobili.filter(alimentazione) => {
     if(marca === benzina) {
+        return true
+    }
+}
+console.log(benzina)
+
+const diesel = automobili.filter(alimentazione) => {
+    if(marca === diesel) {
         return true
     }
 }
