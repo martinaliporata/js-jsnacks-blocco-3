@@ -59,5 +59,9 @@ const people = [
 const arrayVuoto = []
 
 people.forEach((element) => {
-    console.log(`$(element.nome)$(element.cognome)$(element.età)`)
+    if (età >= 18) {
+        console.log(`$(element.nome)$(element.cognome)$', tu puoi guidare'`)
+    } else {
+        console.log(`$(element.nome)$(element.cognome)$', tu non puoi guidare'`)
+    }
 })
