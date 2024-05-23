@@ -121,20 +121,20 @@ const automobili =
 
 // correzione
 
-const gasAutos = cars.filer((singleAuto) => {
+const gasAutos = cars.filter((singleAuto) => {
     if(singleAuto.alimentazione==='benzina')
         return true
 })
 console.log(gasAutos)
 
 
-const dieselAutos = cars.filer((singleAuto) => {
+const dieselAutos = cars.filter((singleAuto) => {
     if(singleAuto.alimentazione==='diesel')
         return true
 })
 console.log(dieselAutos)
 
-const othersAutos = cars.filer((singleAuto) => {
+const othersAutos = cars.filter((singleAuto) => {
     if(singleAuto.alimentazione!=='diesel' && singleAuto.alimentazione!=diesel)
         return true
 })
