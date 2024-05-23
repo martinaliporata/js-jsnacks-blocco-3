@@ -55,3 +55,9 @@ const people = [
         età: 20,
     },
 ]
+
+const arrayVuoto = []
+
+people.forEach((element) => {
+    console.log(`$(element.nome)$(element.cognome)$(element.età)`)
+})
