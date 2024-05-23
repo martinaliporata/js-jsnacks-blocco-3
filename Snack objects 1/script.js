@@ -95,5 +95,11 @@ const automobili =
         modello: 'fiesta',
         alimentazione: 'diesel'
     },
-
 ]
+
+const benzina = automobili.filter(marca) => {
+    if(marca === benzina) {
+        return true
+    }
+}
+console.log(benzina)
