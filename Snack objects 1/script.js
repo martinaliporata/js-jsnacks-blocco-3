@@ -97,23 +97,70 @@ const automobili =
     },
 ]
 
-const benzina = automobili.filter(alimentazione) => {
-    if(marca === benzina) {
-        return true
-    }
-}
-console.log(benzina)
+// const benzina = automobili.filter(alimentazione) => {
+//     if(marca === benzina) {
+//         return true
+//     }
+// }
+// console.log(benzina)
 
-const diesel = automobili.filter(alimentazione) => {
-    if(marca === diesel) {
-        return true
-    }
-}
-console.log(diesel)
+// const diesel = automobili.filter(alimentazione) => {
+//     if(marca === diesel) {
+//         return true
+//     }
+// }
+// console.log(diesel)
 
-const others = automobili.filter(alimentazione) => {
-    if(marca === gpl && elettrico && metano) {
+// const others = automobili.filter(alimentazione) => {
+//     if(marca === gpl && elettrico && metano) {
+//         return true
+//     }
+// }
+// console.log(others)
+
+
+// correzione
+
+const gasAutos = cars.filer((singleAuto) => {
+    if(singleAuto.alimentazione==='benzina')
         return true
-    }
-}
-console.log(others)
+})
+console.log(gasAutos)
+
+
+const dieselAutos = cars.filer((singleAuto) => {
+    if(singleAuto.alimentazione==='diesel')
+        return true
+})
+console.log(dieselAutos)
+
+const othersAutos = cars.filer((singleAuto) => {
+    if(singleAuto.alimentazione!=='diesel' && singleAuto.alimentazione!=diesel)
+        return true
+})
+console.log(othersAutos)
+
+
+
+
+
+
+// Alternativa
+// const gasAutos = []
+// const dieselAutos = []
+// const othersAutos = []
+
+// for(let index = 0; index < Array.length; index++) {
+//     const element = cars[index];
+
+//     if(element.alimentazione==='benzina'){
+//         gasAutos.push(element)
+//     } else if (element.alimentazione==='diesel'){
+//         dieselAutos.push(element)
+//     } else {
+//         othersAutos.push(element)
+//     }
+// }
+// console.log(gasAutos)
+// console.log(dieselAutos)
+// console.log(othersAutos)
