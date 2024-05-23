@@ -109,4 +109,11 @@ const diesel = automobili.filter(alimentazione) => {
         return true
     }
 }
-console.log(benzina)
+console.log(diesel)
+
+const others = automobili.filter(alimentazione) => {
+    if(marca === gpl && elettrico && metano) {
+        return true
+    }
+}
+console.log(others)
