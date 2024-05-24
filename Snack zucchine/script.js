@@ -45,7 +45,7 @@ const zucchine = [
 
 // Calcola quanto pesano tutte le zucchine.
 
-let pesoTotaleZucchine = 0;
+const pesoTotaleZucchine = 0;
 zucchine.forEach(zucchina => {
     pesoTotale += zucchina.peso;
 });
@@ -65,3 +65,13 @@ zucchine.forEach(zucchina => {
 });
 
 // Infine stampa separatamente quanto pesano i due gruppi di zucchine.
+const pesoTotaleZucchineCorte = 0;
+zucchineCorte.forEach(zucchina => {
+    pesoTotaleZucchineCorte += zucchina.peso;
+});
+
+// Calcolo del peso totale delle zucchine lunghe
+const pesoTotaleZucchineLunghe = 0;
+zucchineLunghe.forEach(zucchina => {
+    pesoTotaleZucchineLunghe += zucchina.peso;
+});
