@@ -70,7 +70,6 @@ zucchineCorte.forEach(zucchina => {
     pesoTotaleZucchineCorte += zucchina.peso;
 });
 
-// Calcolo del peso totale delle zucchine lunghe
 const pesoTotaleZucchineLunghe = 0;
 zucchineLunghe.forEach(zucchina => {
     pesoTotaleZucchineLunghe += zucchina.peso;
