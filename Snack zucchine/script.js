@@ -1,6 +1,6 @@
 // Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza.
 
-const array = [
+const zucchine = [
     {varieta: 'Nera di Milano', 
     peso: 341.23, 
     lunghezza: 14.58
@@ -52,4 +52,16 @@ zucchine.forEach(zucchina => {
 
 
 // Dividi in due array separati le zucchine che misurano meno o più di 8cm.
+
+const zucchineCorte = [];
+const zucchineLunghe = [];
+
+zucchine.forEach(zucchina => {
+    if (zucchina.lunghezza < 8) {
+        zucchineCorte.push(zucchina);
+    } else {
+        zucchineLunghe.push(zucchina);
+    }
+});
+
 // Infine stampa separatamente quanto pesano i due gruppi di zucchine.
