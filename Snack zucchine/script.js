@@ -1,7 +1,4 @@
 // Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza.
-// Calcola quanto pesano tutte le zucchine.
-// Dividi in due array separati le zucchine che misurano meno o più di 8cm.
-// Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 
 const array = [
     {varieta: 'Nera di Milano', 
@@ -45,3 +42,14 @@ const array = [
     lunghezza: 29.12 
     }
 ]
+
+// Calcola quanto pesano tutte le zucchine.
+
+let pesoTotaleZucchine = 0;
+zucchine.forEach(zucchina => {
+    pesoTotale += zucchina.peso;
+});
+
+
+// Dividi in due array separati le zucchine che misurano meno o più di 8cm.
+// Infine stampa separatamente quanto pesano i due gruppi di zucchine.
