@@ -47,10 +47,10 @@ const zucchine = [
 
 const pesoTotaleZucchine = 0;
 zucchine.forEach(zucchina => {
-    pesoTotale += zucchina.peso;
+    pesoTotaleZucchine += zucchina.peso;
 });
 
-
+console.log(pesoTotaleZucchine)
 // Dividi in due array separati le zucchine che misurano meno o più di 8cm.
 
 const zucchineCorte = [];
